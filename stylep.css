@@ -197,7 +197,7 @@
             color: rgb(236, 236, 236);
         }
 
-        .tech li {
+        .tech{
             list-style-type: none;
             color: rgb(21, 18, 18);
         }
@@ -208,7 +208,7 @@
             /* grid-column-start: 3; */
             height: fit-content;
             border-radius: 15px;
-            padding: 45px;
+            padding: 50px;
             font-size: x-large;
             /* min-width: 400px;
             max-width: 400px; */
@@ -223,12 +223,8 @@
             color: rgb(255, 255, 255);
         }
 
-        .soft li {
-            list-style-type: none;
+        .soft {
             color: rgb(19, 19, 19);
-            justify-self: start;
-            margin-left: 0px;
-
         }
 
         .project {
@@ -279,25 +275,24 @@
         }
 
         .contact {
-            /* display: grid;
-            justify-content: center; */
             display: grid;
-            /* background-color:#852e4e; */
+            grid-auto-flow: column;
             background-color: #0f0f0a;
             min-height: 100dvh;
             align-content: center;
-            justify-content: center;
+            justify-content: space-around;
+            /* gap: 40px; */
         }
 
-        .con {
+        /* .con {
             display: grid;
             justify-content: center;
-            /* background-color: rgba(73, 100, 93, 0.662); */
+            background-color: rgba(73, 100, 93, 0.662);
             color: rgb(162, 224, 221);
             font-size: xx-large;
             width: fit-content;
             border-radius: 10px;
-        }
+        } */
 
         .footer {
             background-color: rgb(0, 0, 0);
@@ -307,7 +302,7 @@
             font-family: monospace;
             font-size: 20px;
             width: fit-content;
-            height: 200px;
+            height: 300px;
             border-radius: 20px;
             box-shadow: 0px 0px 50px 20px rgb(139, 240, 206);
 
@@ -332,6 +327,51 @@
             height: 50px;
             width: 50px;
         }
+        .fill{
+
+            background-color: rgb(0, 0, 0);
+            flex-direction: column;
+            padding: 50px;
+            color: rgb(255, 243, 155);
+            font-family: monospace;
+            font-size: 20px;
+            width: 400px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px 20px rgb(139, 240, 206);
+
+        }
+        .fill h6{
+            font-size: larger;
+        }
+        .fill .item{
+            justify-content: center;
+            color: #adddf5;
+        }
+        .fill input{
+            width: stretch;
+            height: 25px;
+            background-color: azure;
+
+        }
+        .fill textarea{
+            width: stretch;
+            height: 70px;
+            background-color: beige;
+        }
+        .item .btn{
+            justify-self: center;
+        }
+        .btn button{
+            width: 100px;
+            height: 30px;
+            background-color: aqua;
+            color: rgb(21, 18, 18);
+            font-size: medium;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+        
 
         @media screen and (max-width: 600px)and (max-height: 100dvh) {
 
@@ -381,6 +421,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 min-height: 200dvh;
+                align-content: space-evenly;
             }
         }
 
