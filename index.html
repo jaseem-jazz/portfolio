@@ -7,6 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylep.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "XKdiOUylYM2Z12Kkg",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -21,7 +32,6 @@
             </div>
         </section>
         <section class="home" id="home">
-
             <div class="name">
                 <h2>Hi I am <br>
                     Muhammed Jaseem Mp</h2><br>
@@ -55,23 +65,23 @@
                 <h3>Technical Skills
                     <hr>
                 </h3><br><br>
-                <ul>
-                    <li>Html</li><br>
-                    <li>CSS</li><br>
-                    <li>Basics in C</li><br>
-                    <li>Basic in PHP</li>
-                </ul>
+                <dl>
+                    <dd>Html</dd><br>
+                    <dd>CSS</dd><br>
+                    <dd>Basics in C</dd><br>
+                    <dd>Basic in PHP</dd>
+                </dl>
             </div>
             <div class="soft">
                 <h3>Soft Skills
                     <hr>
                 </h3><br><br>
-                <ul>
-                    <li>Problem Solving</li><br>
-                    <li>Logical Thinking</li><br>
-                    <li>Leadership</li><br>
-                    <li>Dedicated</li><br>
-                </ul>
+                <dl>
+                    <dd>Problem Solving</dd><br>
+                    <dd>Logical Thinking</dd><br>
+                    <dd>Leadership</dd><br>
+                    <dd>Dedicated</dd><br>
+                </dl>
             </div>
         </section>
         <hr>
@@ -86,20 +96,19 @@
                 <h3>Live Project – MERIDIOUS EVENTS AND TRAVELS
                     <hr>
                 </h3><br><br>
-                <p>
-Company: Meridious Company, Kozhikode
-Worked as part of a live academic project for Meridious Events and
-Travels. Contributed to understanding business requirements, basic
-system planning, and project coordination. Gained practical
-exposure to real-world business operations and teamwork in a
-professional environment.</p>
+                <p> Company: Meridious Company, Kozhikode
+                    Worked as part of a live academic project for Meridious Events and
+                    Travels. Contributed to understanding business requirements, basic
+                    system planning, and project coordination. Gained practical
+                    exposure to real-world business operations and teamwork in a
+                    professional environment.</p>
             </div>
         </section>
         <hr>
         <section class="contact" id="contact">
             <div class="footer">
-                <h2>Ready to Collab?</h2><br><br>
-                <p>Whether you have a groundbreaking idea or just want to discuss <br> the future of tech, my inbox is
+                <h2>Ready to Collab?</h2><hr><br><br>
+                <p>Whether you have a groundbreaking idea or <br> just want to discuss <br> the future of tech, my inbox is
                     always open.</p><br>
 
                 <a href="https://www.instagram.com/j__a_zz?igsh=MXZ5Z2VlOTJvZXZy"><img class="im"
@@ -108,6 +117,19 @@ professional environment.</p>
                     href="https://www.linkedin.com/in/muhammed-jaseem-7a0400347?utm_source=share_via&utm_content=profile&utm_medium=member_android"><img
                         class="imm" src="linkedin.png" alt=""></a>
 
+            </div>
+            <div class="fill">
+
+                    <div><h2 style="font-family: sans-serif;">Send a Message.</h2><hr></div><br>
+                    <div class="item">
+                    <div><h6>Name</h6>
+                    <input type="text" placeholder="Enter your name" id="name"></div>
+                    <div><h6>Email</h6>
+                    <input type="email" placeholder="Enter your email" id="email"></div>
+                    <div><h6>Message</h6>
+                    <textarea name="Message" id="message" placeholder="Write Your Message"></textarea></div><br>
+                    <div class="btn"><button type="submit" onclick="sendMail()">Submit</button></div>
+                    </div>
             </div>
 
         </section>
